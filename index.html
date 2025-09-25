@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>three.js ascii</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="nwz-header">
+      <div class="nwz-header-left">
+        <div class="nwz-logo">Pixeon ®</div>
+      </div>
+      <div class="nwz-header-center">
+        <nav class="nwz-nav">
+          <a href="#" class="nav-link">HOME</a>
+          <a href="#" class="nav-link">PROJECTS</a>
+          <a href="#" class="nav-link">ABOUT</a>
+          <a href="#" class="nav-link">BLOG</a>
+        </nav>
+      </div>
+      <div class="nwz-header-right">
+        <button class="nwz-contact-btn">
+          CONTACT
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 11L11 1M11 1H1M11 1V11"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- 主要内容区域 - 基于参考图片的布局 -->
+    <div class="main-content">
+      <div class="content-overlay">
+        <div class="studio-name">Pixeon® Studio</div>
+        <div class="content-row">
+          <div class="content-left">
+            <div class="main-headline">We Created Brands   That Stick</div>
+          </div>
+          <div class="content-right">
+            <div class="description">
+              We help founders grow through bold design, sharp strategy, and smart marketing that drives recognition, engagement, and long-term brand loyalty.
+            </div>
+            <button class="cta-button">
+              GET IN TOUCH
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 11L11 1M11 1H1M11 1V11"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 粒子效果容器 -->
+    <div class="particle-container" id="particles"></div>
+
+    <!-- 动态背景网格 -->
+    <div class="background-grid" id="background-grid"></div>
+
+    <!-- 全屏切换按钮 -->
+    <button class="fullscreen-toggle" id="fullscreen-toggle" aria-label="Toggle Fullscreen">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+      </svg>
+    </button>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="./ui.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
